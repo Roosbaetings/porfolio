@@ -18,21 +18,27 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex flex-col justify-center px-6 overflow-hidden"
     >
-      {/* Background glow */}
+
+      {/* Top colour bar */}
       <div
-        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(circle, rgba(247,117,117,0.06) 0%, transparent 70%)",
-        }}
-      />
-      <div
-        className="absolute top-1/3 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(circle, rgba(74,204,42,0.04) 0%, transparent 70%)",
-        }}
-      />
+        aria-hidden="true"
+        className="absolute top-0 inset-x-0 pointer-events-none"
+        style={{ height: "320px" }}
+      >
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "linear-gradient(90deg, rgba(247,117,117,0.18) 0%, transparent 40%, transparent 60%, rgba(74,204,42,0.14) 100%)",
+            filter: "blur(40px)",
+          }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "linear-gradient(to bottom, rgba(247,117,117,0.06) 0%, transparent 100%)",
+          }}
+        />
+      </div>
 
       <div className="max-w-5xl mx-auto w-full pt-24">
         <motion.div
@@ -68,7 +74,7 @@ export default function Hero() {
             className="text-sm font-mono tracking-widest uppercase"
             style={{ color: "#4ACC2A" }}
           >
-            Beschikbaar voor opdrachten
+            Werkzaam als Frontend Developer
           </span>
         </motion.div>
 

@@ -49,14 +49,13 @@ export default function Contact() {
             className="text-3xl sm:text-4xl font-semibold tracking-tight mb-4"
             style={{ color: "#EDEDED" }}
           >
-            Laten we samenwerken
+            Laten we connecten
           </h2>
           <p
             className="text-base max-w-md mx-auto leading-relaxed"
             style={{ color: "#888888" }}
           >
-            Ik sta open voor nieuwe opdrachten. Of je nu een project in gedachten hebt
-            of gewoon wil kennismaken, neem gerust contact op.
+            Ik ben altijd benieuwd naar interessante mensen en projecten. Neem gerust contact op.
           </p>
         </motion.div>
 
