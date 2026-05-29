@@ -84,21 +84,11 @@ export default function About() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.04, duration: 0.3 }}
-                    className="px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 cursor-default"
+                    className="px-3 py-1.5 rounded-lg text-xs font-medium font-mono"
                     style={{
-                      background: "#222222",
-                      color: "#EDEDED",
-                      border: "1px solid #2A2A2A",
-                    }}
-                    onMouseEnter={(e) => {
-                      (e.currentTarget as HTMLElement).style.borderColor =
-                        "rgba(247,117,117,0.4)";
-                      (e.currentTarget as HTMLElement).style.color = "#F77575";
-                    }}
-                    onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLElement).style.borderColor =
-                        "#2A2A2A";
-                      (e.currentTarget as HTMLElement).style.color = "#EDEDED";
+                      background: "rgba(74,204,42,0.10)",
+                      color: "#4ACC2A",
+                      border: "1px solid rgba(74,204,42,0.15)",
                     }}
                   >
                     {skill}
