@@ -200,16 +200,18 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
             href={project.live}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200"
+            className={`flex items-center gap-2 rounded-xl text-sm font-medium transition-all duration-200 ${
+              project.mobileScreenshot ? "px-6 py-3" : "px-4 py-2.5"
+            }`}
             style={
               project.mobileScreenshot
-                ? { background: "#1A1A1A", border: "1px solid #2A2A2A", color: "#888888" }
+                ? { border: "1px solid #2A2A2A", color: "#EDEDED", background: "transparent" }
                 : { background: "#F77575", color: "#0F0F0F" }
             }
             onMouseEnter={(e) => {
               if (project.mobileScreenshot) {
-                (e.currentTarget as HTMLElement).style.borderColor = "#EDEDED";
-                (e.currentTarget as HTMLElement).style.color = "#EDEDED";
+                (e.currentTarget as HTMLElement).style.borderColor = "#F77575";
+                (e.currentTarget as HTMLElement).style.color = "#F77575";
               } else {
                 (e.currentTarget as HTMLElement).style.background = "#f96a6a";
                 (e.currentTarget as HTMLElement).style.transform = "translateY(-1px)";
@@ -218,7 +220,7 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
             onMouseLeave={(e) => {
               if (project.mobileScreenshot) {
                 (e.currentTarget as HTMLElement).style.borderColor = "#2A2A2A";
-                (e.currentTarget as HTMLElement).style.color = "#888888";
+                (e.currentTarget as HTMLElement).style.color = "#EDEDED";
               } else {
                 (e.currentTarget as HTMLElement).style.background = "#F77575";
                 (e.currentTarget as HTMLElement).style.transform = "translateY(0)";

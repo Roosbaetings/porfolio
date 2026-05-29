@@ -105,9 +105,9 @@ export default function Hero() {
           className="text-base sm:text-lg leading-relaxed max-w-xl mb-12"
           style={{ color: "#888888" }}
         >
-          Ik bouw snelle, toegankelijke en mooie webapplicaties. Met focus op
-          schone architectuur, pixel-perfecte interfaces en een geweldige
-          gebruikerservaring.
+          Ik bouw snelle, toegankelijke en mooie webapplicaties en mobiele apps.
+          Met focus op schone architectuur, pixel-perfecte interfaces en een
+          gebruikerservaring die voor iedereen werkt.
         </motion.p>
 
         <motion.div
