@@ -18,7 +18,6 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex flex-col justify-center px-6 overflow-hidden"
     >
-
       {/* Top colour bar */}
       <div
         aria-hidden="true"
@@ -28,14 +27,16 @@ export default function Hero() {
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(90deg, rgba(247,117,117,0.18) 0%, transparent 40%, transparent 60%, rgba(74,204,42,0.14) 100%)",
+            background:
+              "linear-gradient(90deg, rgba(247,117,117,0.18) 0%, transparent 40%, transparent 60%, rgba(74,204,42,0.14) 100%)",
             filter: "blur(40px)",
           }}
         />
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(to bottom, rgba(247,117,117,0.06) 0%, transparent 100%)",
+            background:
+              "linear-gradient(to bottom, rgba(247,117,117,0.06) 0%, transparent 100%)",
           }}
         />
       </div>
@@ -45,10 +46,9 @@ export default function Hero() {
           custom={0}
           initial="hidden"
           animate="visible"
-          variants={fadeUp}
           className="flex items-center gap-3 mb-8"
         >
-          <div className="relative flex-shrink-0">
+          <div className="relative shrink-0">
             <div
               className="w-14 h-14 rounded-full overflow-hidden"
               style={{ border: "2px solid #2A2A2A" }}
@@ -82,7 +82,6 @@ export default function Hero() {
           custom={1}
           initial="hidden"
           animate="visible"
-          variants={fadeUp}
           className="text-5xl sm:text-6xl md:text-7xl font-semibold leading-tight tracking-tight mb-6"
           style={{ color: "#EDEDED" }}
         >
@@ -93,7 +92,6 @@ export default function Hero() {
           custom={2}
           initial="hidden"
           animate="visible"
-          variants={fadeUp}
           className="text-2xl sm:text-3xl font-light mb-8"
           style={{ color: "#888888" }}
         >
@@ -104,19 +102,18 @@ export default function Hero() {
           custom={3}
           initial="hidden"
           animate="visible"
-          variants={fadeUp}
           className="text-base sm:text-lg leading-relaxed max-w-xl mb-12"
           style={{ color: "#888888" }}
         >
           Ik bouw snelle, toegankelijke en mooie webapplicaties. Met focus op
-          schone architectuur, pixel-perfecte interfaces en een geweldige gebruikerservaring.
+          schone architectuur, pixel-perfecte interfaces en een geweldige
+          gebruikerservaring.
         </motion.p>
 
         <motion.div
           custom={4}
           initial="hidden"
           animate="visible"
-          variants={fadeUp}
           className="flex flex-wrap gap-3"
         >
           <a
@@ -176,7 +173,9 @@ export default function Hero() {
           animate={{ y: [0, 6, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
           className="w-px h-8"
-          style={{ background: "linear-gradient(to bottom, #888888, transparent)" }}
+          style={{
+            background: "linear-gradient(to bottom, #888888, transparent)",
+          }}
         />
       </motion.div>
     </section>
