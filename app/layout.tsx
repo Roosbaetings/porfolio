@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Roos Baetings — Frontend Developer",
   description: "Portfolio van Roos Baetings. Frontend developer gespecialiseerd in moderne, performante webapplicaties.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
