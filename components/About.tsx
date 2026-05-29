@@ -15,6 +15,10 @@ const skills = [
   "Figma",
   "Git",
   "CI/CD",
+  "Node.js",
+  "MongoDB",
+  "Docker",
+  "ISO 27001",
 ];
 
 export default function About() {
@@ -49,16 +53,34 @@ export default function About() {
                 Bouwen voor het web, met aandacht voor detail.
               </h2>
               <div className="space-y-4">
-                <p className="text-sm leading-relaxed" style={{ color: "#888888" }}>
-                  Ik ben een frontend developer met een passie voor het omzetten van
-                  complexe problemen naar eenvoudige, elegante interfaces. Ik hecht veel
-                  waarde aan de details — van pixel-perfecte layouts tot vloeiende
-                  interacties.
+                <p
+                  className="text-sm sm:text-base leading-relaxed"
+                  style={{ color: "#888888" }}
+                >
+                  Ik ben een frontend developer met een passie voor het vertalen
+                  van complexe vraagstukken naar eenvoudige, elegante
+                  interfaces. Ik hecht veel waarde aan details. Van
+                  pixel-perfecte layouts tot vloeiende interacties en een
+                  consistente gebruikerservaring.
                 </p>
-                <p className="text-sm leading-relaxed" style={{ color: "#888888" }}>
-                  Mijn focus ligt op het bouwen van producten die snel, toegankelijk
-                  en prettig in gebruik zijn. Ik werk het best op het snijvlak van
-                  design en engineering.
+                <p
+                  className="text-sm sm:text-base leading-relaxed"
+                  style={{ color: "#888888" }}
+                >
+                  Daarnaast haal ik veel energie uit het coachen en begeleiden
+                  van andere developers. Dankzij mijn sterke designachtergrond
+                  kan ik goed schakelen tussen developers, designers en
+                  stakeholders.
+                </p>
+
+                <p
+                  className="text-sm sm:text-base leading-relaxed"
+                  style={{ color: "#888888" }}
+                >
+                  Ook heb ik ervaring met werken binnen ISO 27001-processen en
+                  het ondersteunen van interne en externe audits. Hierdoor ben
+                  ik gewend om gestructureerd te werken met aandacht voor
+                  kwaliteit, veiligheid en continue verbetering.
                 </p>
               </div>
             </motion.div>
