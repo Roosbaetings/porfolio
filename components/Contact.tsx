@@ -16,16 +16,28 @@ const LinkedInIcon = () => (
 );
 
 const MailIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <rect width="20" height="16" x="2" y="4" rx="2" />
     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
   </svg>
 );
 
 const socials = [
-  { label: "GitHub", href: "https://github.com/yourusername", icon: <GithubIcon /> },
-  { label: "LinkedIn", href: "https://linkedin.com/in/yourprofile", icon: <LinkedInIcon /> },
-  { label: "Email", href: "mailto:you@example.com", icon: <MailIcon /> },
+  {
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/roosbaetings",
+    icon: <LinkedInIcon />,
+  },
+  { label: "Email", href: "mailto:roosbaetings@gmail.com", icon: <MailIcon /> },
 ];
 
 export default function Contact() {
@@ -55,7 +67,8 @@ export default function Contact() {
             className="text-base max-w-md mx-auto leading-relaxed"
             style={{ color: "#888888" }}
           >
-            Ik ben altijd benieuwd naar interessante mensen en projecten. Neem gerust contact op.
+            Ik ben altijd benieuwd naar interessante mensen en projecten. Neem
+            gerust contact op.
           </p>
         </motion.div>
 
@@ -72,21 +85,19 @@ export default function Contact() {
               href={social.href}
               target={social.href.startsWith("mailto") ? undefined : "_blank"}
               rel="noopener noreferrer"
-              className="flex items-center gap-2.5 px-5 py-3 rounded-xl text-sm font-medium transition-all duration-200"
+              className="flex items-center gap-2.5 px-6 py-3 rounded-xl text-sm font-medium transition-all duration-200"
               style={{
-                background: "#1A1A1A",
                 border: "1px solid #2A2A2A",
-                color: "#888888",
+                color: "#EDEDED",
+                background: "transparent",
               }}
               onMouseEnter={(e) => {
                 (e.currentTarget as HTMLElement).style.borderColor = "#F77575";
                 (e.currentTarget as HTMLElement).style.color = "#F77575";
-                (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)";
               }}
               onMouseLeave={(e) => {
                 (e.currentTarget as HTMLElement).style.borderColor = "#2A2A2A";
-                (e.currentTarget as HTMLElement).style.color = "#888888";
-                (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
+                (e.currentTarget as HTMLElement).style.color = "#EDEDED";
               }}
               aria-label={social.label}
             >
