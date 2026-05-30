@@ -74,7 +74,16 @@ export default function Hero() {
             className="text-sm font-mono tracking-widest uppercase"
             style={{ color: "#4ACC2A" }}
           >
-            Werkzaam als Frontend Developer
+            Werkzaam bij{" "}
+            <a
+              href="https://todaytomorrow.nl"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:opacity-80 transition-opacity duration-200"
+              style={{ color: "inherit" }}
+            >
+              Todaytomorrow
+            </a>
           </span>
         </motion.div>
 

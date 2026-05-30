@@ -30,12 +30,6 @@ export default function Navbar() {
       <nav className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3 group" aria-label="Home">
           <Logo />
-          <span
-            className="text-sm font-medium tracking-wide"
-            style={{ color: "#EDEDED" }}
-          >
-            Roos Baetings
-          </span>
         </a>
 
         <ul className="flex items-center gap-1">
